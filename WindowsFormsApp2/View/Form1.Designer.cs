@@ -44,6 +44,8 @@ namespace WindowsFormsApp2
             this.btnProcurar = new System.Windows.Forms.Button();
             this.dgInformacao = new System.Windows.Forms.DataGridView();
             this.dgPalavra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PontosCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgInformacao)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,8 +168,10 @@ namespace WindowsFormsApp2
             this.dgInformacao.AllowUserToDeleteRows = false;
             this.dgInformacao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgInformacao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgPalavra});
-            this.dgInformacao.Location = new System.Drawing.Point(430, 12);
+            this.dgPalavra,
+            this.PontosCol,
+            this.Column1});
+            this.dgInformacao.Location = new System.Drawing.Point(426, 9);
             this.dgInformacao.Name = "dgInformacao";
             this.dgInformacao.ReadOnly = true;
             this.dgInformacao.Size = new System.Drawing.Size(245, 150);
@@ -178,6 +182,18 @@ namespace WindowsFormsApp2
             this.dgPalavra.HeaderText = "Palavra";
             this.dgPalavra.Name = "dgPalavra";
             this.dgPalavra.ReadOnly = true;
+            // 
+            // PontosCol
+            // 
+            this.PontosCol.HeaderText = "Pontos";
+            this.PontosCol.Name = "PontosCol";
+            this.PontosCol.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Form1
             // 
@@ -199,7 +215,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.btn02);
             this.Controls.Add(this.btn01);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Caça-Palavras";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgInformacao)).EndInit();
             this.ResumeLayout(false);
@@ -223,6 +239,8 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Button btnProcurar;
         private System.Windows.Forms.DataGridView dgInformacao;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgPalavra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PontosCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }
 

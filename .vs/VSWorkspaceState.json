@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WindowsFormsApp2",
+    "\\WindowsFormsApp2\\Control",
+    "\\WindowsFormsApp2\\View"
   ],
+  "SelectedNode": "\\WindowsFormsApp2\\View\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -35,3 +35,23 @@ C:\Users\lamza\OneDrive\Área de Trabalho\Trabalho02-main\WindowsFormsApp2\obj\D
 C:\Users\lamza\OneDrive\Área de Trabalho\Trabalho02-main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
 C:\Users\lamza\OneDrive\Área de Trabalho\Trabalho02-main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\lamza\OneDrive\Área de Trabalho\Trabalho02-main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Usuario\source\repos\Nova pasta\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Usuario\source\repos\Nova pasta\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Usuario\source\repos\Nova pasta\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Usuario\source\repos\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\Usuario\source\repos\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Usuario\source\repos\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\marcus.pinto\source\Nova pasta\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\marcus.pinto\source\Nova pasta\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\marcus.pinto\source\Nova pasta\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\marcus.pinto\source\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojAssemblyReference.cache
+C:\Users\marcus.pinto\source\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\marcus.pinto\source\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\marcus.pinto\source\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\marcus.pinto\source\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\marcus.pinto\source\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\marcus.pinto\source\Nova pasta\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb

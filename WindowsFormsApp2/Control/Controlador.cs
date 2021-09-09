@@ -9,9 +9,7 @@ namespace WindowsFormsApp2.Control
 
     class Controller
     {
-        public static string
-
-        ContadorPontos(string[][] matriz, string nu)
+        public static string ContadorPontos(string[][] matriz, string nu)
         {
             //cria variaveis utilizadas
             double points = 0;
