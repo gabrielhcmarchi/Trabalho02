@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="Control\Controlador.cs" />
     <Compile Include="Model\Generator.cs" />
-    <Compile Include="Model\Jogador.cs" />
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

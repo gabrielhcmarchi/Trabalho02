@@ -20,77 +20,69 @@ namespace WindowsFormsApp2
         private void Form1_Load(object sender, EventArgs e)
         {
             PreencheBotao();
+            txtProcura.CharacterCasing = CharacterCasing.Upper;
         }
 
-
-            List<string> palavra = new List<string>();
-            Model.Jogador player = new Model.Jogador();
+        List<string> palavra = new List<string>();
+        int verifica = 0;
 
         private void btnProcurar_Click(object sender, EventArgs e)
         {
+            int repete = Control.Controller.LetraRepetida(txtProcura.Text);
 
-            bool verificaPalavra = true;
-
-            string[,] m = new string[3, 3];
-
-            m[0, 0] = btn01.Text;
-            m[0, 1] = btn02.Text;
-            m[0, 2] = btn03.Text;
-            m[1, 0] = btn04.Text;
-            m[1, 1] = btn05.Text;
-            m[1, 2] = btn06.Text;
-            m[2, 0] = btn07.Text;
-            m[2, 1] = btn08.Text;
-            m[2, 2] = btn09.Text;
+            string[][] matriz = new string[3][];
+            for (int i = 0; i < matriz.Length; i++)
+            {
+                matriz[i] = new string[3];
+            }
+            matriz[0][0] = btn01.Text;
+            matriz[0][1] = btn02.Text;
+            matriz[0][2] = btn03.Text;
+            matriz[1][0] = btn04.Text;
+            matriz[1][1] = btn05.Text;
+            matriz[1][2] = btn06.Text;
+            matriz[2][0] = btn07.Text;
+            matriz[2][1] = btn08.Text;
+            matriz[2][2] = btn09.Text;
 
             foreach (var item in palavra)
             {
                 if (item == txtProcura.Text)
                 {
-                    verificaPalavra = false;
+                    verifica = 1;
+                }
+                if (repete > 0)
+                {
+                    MessageBox.Show("Letras repetidas");
+                   
+                    break;
+
                 }
             }
-            if (verificaPalavra == true)
+            if (verifica == 0)
             {
                 palavra.Add(txtProcura.Text);
-                dgInformacao.Rows.Add(txtProcura.Text);
+                dgInformacao.Rows.Add(txtProcura.Text, Control.Controller.ContadorPontos(matriz, txtProcura.Text).ToString());
             }
-            else if (verificaPalavra == false)
+            if (verifica == 1)
             {
-                MessageBox.Show("Palavra ja existe");
+                MessageBox.Show("Esta palavra já foi digitada");
+
             }
-
-            int repete = RepeatedCharsString(txtProcura.Text);
-
-            if(repete > 0) 
-            {
-                MessageBox.Show("Letras repetidas");
-            }
-
+            txtProcura.Clear();
         }
-       
-        
-       
-        public static int RepeatedCharsString(string x)
+
+        public int ValorTotal()
         {
-            string str = x;
-            int n = str.Length;
-            string dupstr = "";
-            int cnt = 0;
+            int total = 0;
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < dgInformacao.Rows.Count; i++)
             {
-                for (int j = i + 1; j <= n - 1; j++)
-                {
-                    if (str[i] == str[j])
-                    {
-                        dupstr = dupstr + str[i];
-                        cnt ++;
-                    }
-                }
+                total += Convert.ToInt32(dgInformacao.Rows[i].Cells["PontosCol"].Value);
             }
-            return cnt;
+            return total;
         }
+
         public void PreencheBotao()
         {
             btn01.Text = Model.Generator.GeraLetras("A", "D");
@@ -106,12 +98,18 @@ namespace WindowsFormsApp2
 
         private void btnRandomTabela_Click(object sender, EventArgs e)
         {
+          
+            MessageBox.Show("Pontuação Final: "+ ValorTotal().ToString());
             PreencheBotao();
             txtProcura.Clear();
+            dgInformacao.Rows.Clear();
+            palavra.Clear();
+        }
+
+        private void Sair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
-
-
-
 }
 
